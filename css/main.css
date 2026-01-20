@@ -46,6 +46,9 @@ a img {
 }
 /* END RESET*/
  /* Global styles */
+body{
+  font-family: helbetical, arial, sans;
+}
 h1{
     font-size: 7vw;
     margin-top:0;
@@ -113,9 +116,12 @@ a {
 .bio-box img {
   width: 100%;
 }
+.bio-box .social-link{
+  display: block;
+  margin: 2em 0 1em;
+}
 .bio-copy {
   font-size: 1em;
-  line-height: 1.5;
 }
 .bio-copy a {
   color: green;
