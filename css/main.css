@@ -5,7 +5,7 @@ html{
 }
 
 body{
-  font-family: helvetical, arial, sans;
+  font-family: helvetica, arial, sans;
 }
 h1{
     font-size: 7vw;
@@ -37,7 +37,7 @@ h2 ~ p {
   list-style: none;
   padding: 0;
   position: absolute;
-  text-align: left;
+  text-align: center;
   z-index: 40;
 }
 .social-link {
@@ -162,3 +162,30 @@ h2 ~ p {
   color: #fff;
 }
 
+/* Footer */
+.footer{
+  background-color: #000;
+  padding: 10vh 0 15vh;
+  text-align: center;
+}
+
+.footer-nav li{
+  display: inline-block;
+  margin: 2em 1em 0;
+}
+
+.footer-nav a {
+  color: #ccc;
+}
+
+.footer-logo img{
+  width: 50px;
+}
+.footer h3{
+  color: #fff;
+  padding-top: 1.5em;
+  text-transform: uppercase;
+}
+.footer h3 span {
+  color: #aaa;
+}
