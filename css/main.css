@@ -22,6 +22,11 @@ h2 ~ p {
   max-width: 70%;
   text-align: center;
 }
+/* fic for the sticky header covering content */
+.content{
+  height: 10vh;
+
+}
 /*HERO STYLES*/
 .full-hero{
     background-color: #c7dbfc;
