@@ -11,8 +11,14 @@ h1{
     font-size: 7vw;
     margin-top: 0;
 }
+h2{
+  font-size: 2em;
+}
 a {
-    color: #f00;
+    color: #6397b5;
+}
+p{
+  line-height: 1.5;
 }
 
 h2 ~ p {
@@ -142,19 +148,19 @@ h2 ~ p {
   overflow: hidden;
 }
 .bio-box {
-  border: 1px solid black;
   box-sizing: border-box;
   float: left;
   font-size: 1rem;
-  margin: 40px 1% 0;
-  padding: 2%;
-  width: 23%;
+  margin: 6rem 0 0;
+  padding: 0 3%;
+  width: 33%;
 }
 .bio-box h3 {
   color: #fff;
   font-size: 1.5em;
   margin: -40px 0 1em;
   text-align: center;
+  text-transform: uppercase;
 
 }
 .bio-box img {
@@ -162,13 +168,13 @@ h2 ~ p {
 }
 .bio-box .social-link{
   display: block;
-  margin: 2em 0 1em;
+  margin: 2em auto 1em;
 }
 .bio-copy {
   font-size: 1em;
 }
 .bio-copy a {
-  color: green;
+  font-size: 0.75em;
 }
 /*HEADER/NAV styles*/
 .header{
