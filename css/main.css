@@ -6,6 +6,9 @@ html{
 
 body{
   font-family: helvetica, arial, sans;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 h1{
     font-size: 7vw;
@@ -19,6 +22,7 @@ a {
 }
 p{
   line-height: 1.5;
+  margin: 0.75em 0;
 }
 
 h2 ~ p {
@@ -29,6 +33,11 @@ h2 ~ p {
   text-align: center;
 }
 
+.content-container{
+  flex: 1 1 auto;
+  padding-top: 10vh;
+  width: 100%;
+}
 /*HOMEPAGE styles*/
 .home-section{
   margin: 6rem auto;
@@ -43,28 +52,31 @@ h2 ~ p {
   background-color: #000;
   color: #fff;
   padding: 7vh 0;
+  display: flex;
+  align-items: center;
+}
+.home-callout h3 {
+  color: inherit;
+  margin-top: 1em;
 }
 .callout-title{
   font-size: 5.7vw;
   text-align: right;
   text-transform: uppercase;
+  flex: 1 1 0;
 }
 .callout-copy{
   font-size: 0.8rem;
+  flex: 0 0 45em;
+  padding: 0 3vw;
 }
 
-/* fix for the sticky header covering content */
-.content{
-  height: 10vh;
-
-}
 /*HERO STYLES*/
 .full-hero{
     background-color: #c7dbfc;
     background-size: cover;
     box-sizing: border-box;
-    height: 100vh;
-    padding-top: 10vh;
+    height: 90vh;
 }
 /*.full-hero::after{
   bottom: 2vh;
