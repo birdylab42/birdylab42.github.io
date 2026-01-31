@@ -1,4 +1,5 @@
  /* Global styles */
+
 html{
   box-shadow: 0 0 0 30px #000 inset;
   padding: 0 30px;
@@ -482,4 +483,21 @@ h2 ~ p {
 }
 .footer h3 span {
   color: #aaa;
+}
+
+@media (max-width: 800px) {
+  html {
+    box-shadow: none;
+    padding: 0;
+  }
+  .post-aside{
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  }
+  .half-hero{
+    display: none;
+  }
 }
