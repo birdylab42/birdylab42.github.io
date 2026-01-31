@@ -517,9 +517,9 @@ h2 ~ p {
      display: flex;
      flex-direction: column;
 
-     width: 100%;
+     width: 100vw;
    }
-   .bio-box: {
+   .bio-box {
      float: none;
      font-size: 1.3rem;
      width: auto;
