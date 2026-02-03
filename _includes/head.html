@@ -2,9 +2,33 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Test Page: Don't Panic</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% if page.title %}
+      <title>{{ page.title }} | Test Page </title>
+      <meta property="og:title" content="{{ page.title }}" />
+    {% else %}
+      <title>Test Page: Don't Panic</title>
+      <meta property="og:title" content="Test Page" />
+    {% endif %}
+
+    <!-- Meta data stuf -->
+    {% if page.description %}
+        <meta name="description" content="{{ page.description }}">
+        <meta property="og:description" content="{{ page.description }}">
+    {% else %}
+        <meta name="description" content="This is a dangerous site.">
+        <meta property="og:description" content="exampl: Learn Enough CSS and Layout to be dangerous">
+    {% endif %}
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="../images/kitten.jpg" />
+    <meta property="og:url" content="https://birdylab42.github.io" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="/fonts/fontawesome-free-7.1.0-web/css/all.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link href="/favicon.png" rel="icon">
 </head>
